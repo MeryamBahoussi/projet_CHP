@@ -217,7 +217,7 @@ contains
 !!! rho, ci, u_x, u_y, E
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
+!------------ DO PROJET -------------
     do m = mdeb, mfin
        do l = ldeb, lfin
 
