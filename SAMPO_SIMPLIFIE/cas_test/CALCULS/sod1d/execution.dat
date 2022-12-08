@@ -1,6 +1,6 @@
  
  DATE DE DEBUT D'EXECUTION
-jeu. déc.  8 15:49:16 CET 2022
+jeu. déc.  8 18:27:55 CET 2022
  
  Calcul sur            1 processeur(s)
  
@@ -2709,24 +2709,24 @@ jeu. déc.  8 15:49:16 CET 2022
  Ecriture du fichier ./gnuplot/pi.dat
  
  DATE DE FIN D'EXECUTION
-jeu. déc.  8 15:49:17 CET 2022
+jeu. déc.  8 18:27:56 CET 2022
  
  ---------------------------------------------------------------
  - Analyse du temps de calcul des différentes portions du code -
  ---------------------------------------------------------------
- + boucle en temps      (total)       0.3093212310 s
- + calcul fluide        (total)       0.1757375520 s     56.8139314022%
-     - save Un            (total)       0.0067960729 s      3.8671717168%
-     - assemblage sm      (total)       0.1229765599 s     69.9773944084%
-     - maj fluide         (total)       0.0015141090 s      0.8615739746%
-     - decodage fluide    (total)       0.0443868379 s     25.2574577365%
- + delta t              (total)       0.1159737990 s     37.4929967199%
-     - dt decode          (total)       0.0101114030 s      8.7186960196%
-     - dt CL              (total)       0.0458851891 s     39.5651340698%
-     - dt pente           (total)       0.0547401910 s     47.2004810231%
-     - dt Euler           (total)       0.0046626789 s      4.0204588900%
- + decodage             (total)       0.0547224700 s     17.6911458006%
-     - decode U          (total)       0.0953114068 s     30.8130827252%
- + sorties              (total)       0.1447947660 s     46.8104842125%
- + communication MPI    (total)       0.0002619821 s      0.0846957896%
- + communication MPI    (proc 0)      0.0002619821 s
+ + boucle en temps      (total)       0.2606245110 s
+ + calcul fluide        (total)       0.1497065149 s     57.4414564279%
+     - save Un            (total)       0.0066140420 s      4.4180054542%
+     - assemblage sm      (total)       0.1044449370 s     69.7664607700%
+     - maj fluide         (total)       0.0012402928 s      0.8284828469%
+     - decodage fluide    (total)       0.0373583448 s     24.9543881610%
+ + delta t              (total)       0.0981212510 s     37.6485122602%
+     - dt decode          (total)       0.0085323820 s      8.6957533614%
+     - dt CL              (total)       0.0382745820 s     39.0074337900%
+     - dt pente           (total)       0.0466791449 s     47.5729206514%
+     - dt Euler           (total)       0.0041242701 s      4.2032384271%
+ + decodage             (total)       0.0459585551 s     17.6340110558%
+     - decode U          (total)       0.0794553630 s     30.4865274143%
+ + sorties              (total)       0.0904651500 s     34.7109140474%
+ + communication MPI    (total)       0.0002014000 s      0.0772759265%
+ + communication MPI    (proc 0)      0.0002014000 s

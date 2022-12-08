@@ -11,7 +11,7 @@ module decodage
   use m_transport_diffusion
   use thermo_fluide
 
-  use OMP_LIB
+
 
   implicit none
 
@@ -217,13 +217,7 @@ contains
 !!! rho, ci, u_x, u_y, E
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!--------------- DO PROJET ----------------!
-    print *, " m = [", mdeb, "," , mfin  , "]"
-    print *, " l = [", ldeb, "," , lfin  , "]"
 
-  !$OMP PARALLEL
-    !! tid = OMP_GET_THREAD_NUM()
-  !$OMP DO
     do m = mdeb, mfin
        do l = ldeb, lfin
 
@@ -239,22 +233,7 @@ contains
 
        end do
     end do
-    !$OMP END DO
 
-    print *, "I am thread", OMP_GET_THREAD_NUM(), " m = [", mdeb, "," , mfin  , "]"
-    print *, "I am thread", OMP_GET_THREAD_NUM(), " l = [", ldeb, "," , lfin  , "]"
-
-    !$OMP END PARALLEL
-
-    !! Verification de la parallélisation
-    ! print *, "somme b%u_x", sum(b%u_x)
-    ! print *, "somme b%u_y", sum(b%u_y)
-    ! print *, "somme b%E", sum(b%E)
-
-    ! Open(15, File='parallele_parametres.dat')
-    !
-    ! write(15,*) b%u_x
-    ! close(15)
 
     select case (MODELE_DIPHASIQUE)
     case (MONOPHASIQUE)
