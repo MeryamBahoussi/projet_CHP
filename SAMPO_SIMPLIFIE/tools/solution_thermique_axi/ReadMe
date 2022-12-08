@@ -1,0 +1,15 @@
+Solution analytique de l'équation de la chaleur en 1D axi
+
+Solution exacte du probleme suivant
+   1/alpha \d_t T = 1/r \d_r (r \d_r T)    0 <= r < b
+   T(r,t) = f(t)  pour r = b
+   T(r,t) = 0     pour t = 0
+  d'apres le livre Heat Conduction d'Ozisik (1980) p 204 ou 280, on trouve
+ 
+  T(r,t) = 2 alpha/b * \sum_{n=1}^{\infty} beta_n J0(r beta_n)/J1(b beta_n) \int_0^t (f(tau) exp(-alpha*beta_n**2 (t-tau)) dtau) 
+  où (beta_n)_{1,\infty} sont les racines de J0(b x) = 0
+ 
+  Formulation equivalente pour faire apparaitre le fait que T(b,t) = f(t)
+ 
+  T(r,t) = f(t) - 2/b * \sum_{n=1}^{\infty} J0(r beta_n)/(beta_n*J1(b beta_n)) (f(0)exp(-alpha beta_n**2-t) + \int_0^t (f'(tau) exp(-alpha*beta_n**2 (t-tau)) dtau ))
+ 

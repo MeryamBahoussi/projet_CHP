@@ -1,0 +1,734 @@
+ 
+ DATE DE DEBUT D'EXECUTION
+mar. nov. 15 17:51:02 CET 2022
+ 
+ Calcul sur            6 processeur(s)
+ 
+ | Reading from file "entrees/input.ini":
+ |                      geometrie |                                 1 | DEFAULT | 
+ |                       iter_deb |                                 0 | *CUSTOM | 
+ |                       iter_max |                            100000 | *CUSTOM | 
+ |                      temps_Max |                       0.31000E-03 | *CUSTOM | 
+ |          sortie_instationnaire |                                 F | *CUSTOM | 
+ |                      sortie_1D |                                 T | *CUSTOM | 
+ |                      sortie_MF |                                 F | *CUSTOM | 
+ |                 prot_frequence |                              1000 | *CUSTOM | 
+ |                debug_frequence |                               100 | *CUSTOM | 
+ |               sortie_type_freq |                              iter | *CUSTOM | 
+ |               sortie_frequence |                                10 | *CUSTOM | 
+ |                  nb_super_bloc |                                 1 | *CUSTOM | 
+ |                        nb_bloc |                                 1 | *CUSTOM | 
+ |                    sb_1_nature |                                 0 | *CUSTOM | 
+ |         sb_1_modele_diphasique |                                 0 | *CUSTOM | 
+ |        sb_1_methode_resolution |                                 2 | *CUSTOM | 
+ |                  sb_1_visqueux |                                 F | *CUSTOM | 
+ |                sb_1_capillaire |                                 F | DEFAULT | 
+ |                sb_1_eq_energie |                                 0 | DEFAULT | 
+ |                   sb_1_gravite |                                 F | DEFAULT | 
+ |              sb_1_stationnaire |                                 F | *CUSTOM | 
+ |                sb_1_montee_cfl |                                 F | *CUSTOM | 
+ |                       sb_1_cfl |                       0.40000E+00 | *CUSTOM | 
+ |                 sb_1_nb_membre |                                 1 | DEFAULT | 
+ |                    sb_1_membre |      Integer array of size (   1) | *CUSTOM |     1
+ |           sb_1_solveur_Riemann |                                20 | *CUSTOM | 
+ | sb_1_solveur_Riemann_eq_pentes |                                 F | *CUSTOM | 
+ | sb_1_solveur_Riemann_coeff_pen |                       0.10100E+01 | *CUSTOM | 
+ |            sb_1_correction_son |                                 0 | DEFAULT | 
+ |             sb_1_delta_epsilon |                       0.00000E+00 | *CUSTOM | 
+ |  sb_1_delta_epsilon_couche_lim |                       0.10000E+01 | *CUSTOM | 
+ |             sb_1_theta_basMach |                       0.10000E+01 | DEFAULT | 
+ |                 sb_1_implicite |                                 F | *CUSTOM | 
+ |                     sb_1_ordre |                                 1 | *CUSTOM | 
+ |                      sb_1_Xi_t |                       0.00000E+00 | DEFAULT | 
+ |              sb_1_schema_temps |                                 1 | DEFAULT | 
+ |                     b_1_numero |                                 1 | *CUSTOM | 
+ |                  b_1_type_init |                            sod_1d | *CUSTOM | 
+ |              b_1_maillage_type |                         cartesien | *CUSTOM | 
+ |         b_1_maillage_resserrer |                                 F | DEFAULT | 
+ |                   b_1_xin_xout |         Real array of size (   2) | *CUSTOM | 
+    0.000000    1.000000
+ |                   b_1_yin_yout |         Real array of size (   2) | *CUSTOM | 
+    0.000000    1.000000
+ |                         b_1_ld |                                 1 | DEFAULT | 
+ |                         b_1_lf |                              4000 | *CUSTOM | 
+ |                         b_1_md |                                 1 | DEFAULT | 
+ |                         b_1_mf |                                 1 | *CUSTOM | 
+ |                   b_1_nb_patch |      Integer array of size (   4) | *CUSTOM |     1    1    1    1
+ |                    b_1_CL_West |                          flux_nul | *CUSTOM | 
+ |                    b_1_CL_East |                          flux_nul | *CUSTOM | 
+ |                   b_1_CL_South |                          flux_nul | *CUSTOM | 
+ |                   b_1_CL_North |                          flux_nul | *CUSTOM | 
+
+ dt euler =  0.26462E-06    dt visqueux =  0.10000E+71
+ ITER=       1    Temps=  0.26462E-06    DT=  0.26462E-06
+
+ dt euler =  0.15679E-06    dt visqueux =  0.10000E+71
+ ITER=      10    Temps=  0.17783E-05    DT=  0.15679E-06
+
+ dt euler =  0.15056E-06    dt visqueux =  0.10000E+71
+ ITER=      20    Temps=  0.33037E-05    DT=  0.15056E-06
+
+ dt euler =  0.14768E-06    dt visqueux =  0.10000E+71
+ ITER=      30    Temps=  0.47932E-05    DT=  0.14768E-06
+
+ dt euler =  0.14620E-06    dt visqueux =  0.10000E+71
+ ITER=      40    Temps=  0.62618E-05    DT=  0.14620E-06
+
+ dt euler =  0.14516E-06    dt visqueux =  0.10000E+71
+ ITER=      50    Temps=  0.77174E-05    DT=  0.14516E-06
+
+ dt euler =  0.14447E-06    dt visqueux =  0.10000E+71
+ ITER=      60    Temps=  0.91651E-05    DT=  0.14447E-06
+
+ dt euler =  0.14411E-06    dt visqueux =  0.10000E+71
+ ITER=      70    Temps=  0.10608E-04    DT=  0.14411E-06
+
+ dt euler =  0.14382E-06    dt visqueux =  0.10000E+71
+ ITER=      80    Temps=  0.12047E-04    DT=  0.14382E-06
+
+ dt euler =  0.14364E-06    dt visqueux =  0.10000E+71
+ ITER=      90    Temps=  0.13484E-04    DT=  0.14364E-06
+
+ dt euler =  0.14356E-06    dt visqueux =  0.10000E+71
+ ITER=     100    Temps=  0.14920E-04    DT=  0.14356E-06
+
+ dt euler =  0.14347E-06    dt visqueux =  0.10000E+71
+ ITER=     110    Temps=  0.16355E-04    DT=  0.14347E-06
+
+ dt euler =  0.14343E-06    dt visqueux =  0.10000E+71
+ ITER=     120    Temps=  0.17790E-04    DT=  0.14343E-06
+
+ dt euler =  0.14341E-06    dt visqueux =  0.10000E+71
+ ITER=     130    Temps=  0.19224E-04    DT=  0.14341E-06
+
+ dt euler =  0.14339E-06    dt visqueux =  0.10000E+71
+ ITER=     140    Temps=  0.20658E-04    DT=  0.14339E-06
+
+ dt euler =  0.14339E-06    dt visqueux =  0.10000E+71
+ ITER=     150    Temps=  0.22092E-04    DT=  0.14339E-06
+
+ dt euler =  0.14339E-06    dt visqueux =  0.10000E+71
+ ITER=     160    Temps=  0.23526E-04    DT=  0.14339E-06
+
+ dt euler =  0.14339E-06    dt visqueux =  0.10000E+71
+ ITER=     170    Temps=  0.24960E-04    DT=  0.14339E-06
+
+ dt euler =  0.14339E-06    dt visqueux =  0.10000E+71
+ ITER=     180    Temps=  0.26393E-04    DT=  0.14339E-06
+
+ dt euler =  0.14340E-06    dt visqueux =  0.10000E+71
+ ITER=     190    Temps=  0.27827E-04    DT=  0.14340E-06
+
+ dt euler =  0.14340E-06    dt visqueux =  0.10000E+71
+ ITER=     200    Temps=  0.29261E-04    DT=  0.14340E-06
+
+ dt euler =  0.14341E-06    dt visqueux =  0.10000E+71
+ ITER=     210    Temps=  0.30695E-04    DT=  0.14341E-06
+
+ dt euler =  0.14341E-06    dt visqueux =  0.10000E+71
+ ITER=     220    Temps=  0.32130E-04    DT=  0.14341E-06
+
+ dt euler =  0.14341E-06    dt visqueux =  0.10000E+71
+ ITER=     230    Temps=  0.33564E-04    DT=  0.14341E-06
+
+ dt euler =  0.14342E-06    dt visqueux =  0.10000E+71
+ ITER=     240    Temps=  0.34998E-04    DT=  0.14342E-06
+
+ dt euler =  0.14342E-06    dt visqueux =  0.10000E+71
+ ITER=     250    Temps=  0.36432E-04    DT=  0.14342E-06
+
+ dt euler =  0.14342E-06    dt visqueux =  0.10000E+71
+ ITER=     260    Temps=  0.37866E-04    DT=  0.14342E-06
+
+ dt euler =  0.14343E-06    dt visqueux =  0.10000E+71
+ ITER=     270    Temps=  0.39300E-04    DT=  0.14343E-06
+
+ dt euler =  0.14343E-06    dt visqueux =  0.10000E+71
+ ITER=     280    Temps=  0.40735E-04    DT=  0.14343E-06
+
+ dt euler =  0.14343E-06    dt visqueux =  0.10000E+71
+ ITER=     290    Temps=  0.42169E-04    DT=  0.14343E-06
+
+ dt euler =  0.14343E-06    dt visqueux =  0.10000E+71
+ ITER=     300    Temps=  0.43603E-04    DT=  0.14343E-06
+
+ dt euler =  0.14343E-06    dt visqueux =  0.10000E+71
+ ITER=     310    Temps=  0.45038E-04    DT=  0.14343E-06
+
+ dt euler =  0.14343E-06    dt visqueux =  0.10000E+71
+ ITER=     320    Temps=  0.46472E-04    DT=  0.14343E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     330    Temps=  0.47906E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     340    Temps=  0.49341E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     350    Temps=  0.50775E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     360    Temps=  0.52209E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     370    Temps=  0.53644E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     380    Temps=  0.55078E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     390    Temps=  0.56513E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     400    Temps=  0.57947E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     410    Temps=  0.59382E-04    DT=  0.14344E-06
+
+ dt euler =  0.14344E-06    dt visqueux =  0.10000E+71
+ ITER=     420    Temps=  0.60816E-04    DT=  0.14344E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     430    Temps=  0.62250E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     440    Temps=  0.63685E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     450    Temps=  0.65119E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     460    Temps=  0.66554E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     470    Temps=  0.67988E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     480    Temps=  0.69423E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     490    Temps=  0.70857E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     500    Temps=  0.72292E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     510    Temps=  0.73726E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     520    Temps=  0.75161E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     530    Temps=  0.76595E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     540    Temps=  0.78030E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     550    Temps=  0.79464E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     560    Temps=  0.80899E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     570    Temps=  0.82333E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     580    Temps=  0.83768E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     590    Temps=  0.85202E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     600    Temps=  0.86637E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     610    Temps=  0.88071E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     620    Temps=  0.89506E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     630    Temps=  0.90940E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     640    Temps=  0.92375E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     650    Temps=  0.93810E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     660    Temps=  0.95244E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     670    Temps=  0.96679E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     680    Temps=  0.98113E-04    DT=  0.14345E-06
+
+ dt euler =  0.14345E-06    dt visqueux =  0.10000E+71
+ ITER=     690    Temps=  0.99548E-04    DT=  0.14345E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     700    Temps=  0.10098E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     710    Temps=  0.10242E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     720    Temps=  0.10385E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     730    Temps=  0.10529E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     740    Temps=  0.10672E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     750    Temps=  0.10816E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     760    Temps=  0.10959E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     770    Temps=  0.11102E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     780    Temps=  0.11246E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     790    Temps=  0.11389E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     800    Temps=  0.11533E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     810    Temps=  0.11676E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     820    Temps=  0.11820E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     830    Temps=  0.11963E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     840    Temps=  0.12107E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     850    Temps=  0.12250E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     860    Temps=  0.12394E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     870    Temps=  0.12537E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     880    Temps=  0.12680E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     890    Temps=  0.12824E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     900    Temps=  0.12967E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     910    Temps=  0.13111E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     920    Temps=  0.13254E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     930    Temps=  0.13398E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     940    Temps=  0.13541E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     950    Temps=  0.13685E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     960    Temps=  0.13828E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     970    Temps=  0.13972E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     980    Temps=  0.14115E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=     990    Temps=  0.14258E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1000    Temps=  0.14402E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1010    Temps=  0.14545E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1020    Temps=  0.14689E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1030    Temps=  0.14832E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1040    Temps=  0.14976E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1050    Temps=  0.15119E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1060    Temps=  0.15263E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1070    Temps=  0.15406E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1080    Temps=  0.15550E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1090    Temps=  0.15693E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1100    Temps=  0.15837E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1110    Temps=  0.15980E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1120    Temps=  0.16123E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1130    Temps=  0.16267E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1140    Temps=  0.16410E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1150    Temps=  0.16554E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1160    Temps=  0.16697E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1170    Temps=  0.16841E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1180    Temps=  0.16984E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1190    Temps=  0.17128E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1200    Temps=  0.17271E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1210    Temps=  0.17415E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1220    Temps=  0.17558E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1230    Temps=  0.17701E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1240    Temps=  0.17845E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1250    Temps=  0.17988E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1260    Temps=  0.18132E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1270    Temps=  0.18275E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1280    Temps=  0.18419E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1290    Temps=  0.18562E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1300    Temps=  0.18706E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1310    Temps=  0.18849E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1320    Temps=  0.18993E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1330    Temps=  0.19136E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1340    Temps=  0.19280E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1350    Temps=  0.19423E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1360    Temps=  0.19566E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1370    Temps=  0.19710E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1380    Temps=  0.19853E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1390    Temps=  0.19997E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1400    Temps=  0.20140E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1410    Temps=  0.20284E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1420    Temps=  0.20427E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1430    Temps=  0.20571E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1440    Temps=  0.20714E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1450    Temps=  0.20858E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1460    Temps=  0.21001E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1470    Temps=  0.21145E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1480    Temps=  0.21288E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1490    Temps=  0.21431E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1500    Temps=  0.21575E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1510    Temps=  0.21718E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1520    Temps=  0.21862E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1530    Temps=  0.22005E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1540    Temps=  0.22149E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1550    Temps=  0.22292E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1560    Temps=  0.22436E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1570    Temps=  0.22579E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1580    Temps=  0.22723E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1590    Temps=  0.22866E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1600    Temps=  0.23009E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1610    Temps=  0.23153E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1620    Temps=  0.23296E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1630    Temps=  0.23440E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1640    Temps=  0.23583E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1650    Temps=  0.23727E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1660    Temps=  0.23870E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1670    Temps=  0.24014E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1680    Temps=  0.24157E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1690    Temps=  0.24301E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1700    Temps=  0.24444E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1710    Temps=  0.24588E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1720    Temps=  0.24731E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1730    Temps=  0.24874E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1740    Temps=  0.25018E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1750    Temps=  0.25161E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1760    Temps=  0.25305E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1770    Temps=  0.25448E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1780    Temps=  0.25592E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1790    Temps=  0.25735E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1800    Temps=  0.25879E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1810    Temps=  0.26022E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1820    Temps=  0.26166E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1830    Temps=  0.26309E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1840    Temps=  0.26453E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1850    Temps=  0.26596E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1860    Temps=  0.26739E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1870    Temps=  0.26883E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1880    Temps=  0.27026E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1890    Temps=  0.27170E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1900    Temps=  0.27313E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1910    Temps=  0.27457E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1920    Temps=  0.27600E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1930    Temps=  0.27744E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1940    Temps=  0.27887E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1950    Temps=  0.28031E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1960    Temps=  0.28174E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1970    Temps=  0.28318E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1980    Temps=  0.28461E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    1990    Temps=  0.28604E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2000    Temps=  0.28748E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2010    Temps=  0.28891E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2020    Temps=  0.29035E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2030    Temps=  0.29178E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2040    Temps=  0.29322E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2050    Temps=  0.29465E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2060    Temps=  0.29609E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2070    Temps=  0.29752E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2080    Temps=  0.29896E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2090    Temps=  0.30039E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2100    Temps=  0.30183E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2110    Temps=  0.30326E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2120    Temps=  0.30469E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2130    Temps=  0.30613E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2140    Temps=  0.30756E-03    DT=  0.14346E-06
+
+ dt euler =  0.14346E-06    dt visqueux =  0.10000E+71
+ ITER=    2150    Temps=  0.30900E-03    DT=  0.14346E-06
+ ITER=    2157    Temps=  0.31000E-03    DT=  0.14070E-06
+ ITER=    2157    Temps=  0.31000E-03    DT=  0.14070E-06
+ Ecriture des fichiers ./visit/output_xxxx_fin.vtk
+ Ecriture du fichier ./visit/output_0001_fin.vtk
+ Ecriture du fichier ./gnuplot/T.dat
+proc :    1 temps communication:       0.0676540000
+proc :    2 temps communication:       0.0896770000
+proc :    3 temps communication:       0.1162690000
+proc :    4 temps communication:       0.1383930000
+proc :    5 temps communication:       0.1373780000
+ Ecriture du fichier ./gnuplot/rho.dat
+ Ecriture du fichier ./gnuplot/p.dat
+ Ecriture du fichier ./gnuplot/u_x.dat
+ Ecriture du fichier ./gnuplot/u_y.dat
+ Ecriture du fichier ./gnuplot/z.dat
+ Ecriture du fichier ./gnuplot/y.dat
+ Ecriture du fichier ./gnuplot/E.dat
+ Ecriture du fichier ./gnuplot/enthalpie.dat
+ Ecriture du fichier ./gnuplot/gamma.dat
+ Ecriture du fichier ./gnuplot/pi.dat
+proc :    0 temps communication:       0.0403350000
+ temps total=   11.341667058833346      s
+ temps linearisation=   0.0000000000000000      s
+ 
+ DATE DE FIN D'EXECUTION
+mar. nov. 15 17:51:14 CET 2022

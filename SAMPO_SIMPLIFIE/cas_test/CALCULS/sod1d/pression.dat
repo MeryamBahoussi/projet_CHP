@@ -1,0 +1,5 @@
+ # iter       temps    erreur p  
+       0  0.00000E+00          NaN
+     100  0.14920E-03          NaN
+     200  0.29261E-03          NaN
+      -1  0.31000E-03          NaN
