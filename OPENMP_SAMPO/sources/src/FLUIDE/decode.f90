@@ -271,30 +271,19 @@ contains
           b%cv1(ldeb:lfin,mdeb:mfin) = fluide1%EOS%cv
           b%gamma1(ldeb:lfin,mdeb:mfin) = fluide1%EOS%gamma
 
-!--------------- DO PROJET ----------------!
-          !$OMP PARALLEL DO
           do m = mdeb, mfin
              do l = ldeb, lfin
                 call stocke_grandeurs_melange(fluide1, b, l, m)
              end do
           end do
-          !$OMP END PARALLEL DO
 
-          ! Open(15, File='parallele_parametres.dat')
-          !
-          ! write(15,*) b%gamma_eq
-          ! write(15,*) b%pi_eq
-          ! write(15,*) b%q_eq
-          ! write(15,*) b%Cv
-          ! close(15)
 
 
 
 !!! decodage de la pression
           select case (b%eq_energie)
           case (0)
-!--------------- DO PROJET ----------------!
-            !$OMP PARALLEL DO
+
              do m = mdeb, mfin
                 do l = ldeb, lfin
                    fluide1%EOS%gamma = b%gamma_eq(l,m)
@@ -305,40 +294,38 @@ contains
                    b%p(l,m) = EOS_p_from_rho_eps(fluide1%EOS, rho(l,m), eps)
                 end do
              end do
-             !$OMP END PARALLEL DO
+
           case (1) ! isentropique
-            !$OMP PARALLEL DO
+ 
              do m = mdeb, mfin
                 do l = ldeb, lfin
                    b%p(l,m) = b%entropie_ref*rho(l,m)**fluide1%EOS%gamma - fluide1%EOS%pi
                 end do
              end do
-             !$OMP END PARALLEL DO
+
           case (2) ! isotherme
              print*, "isotherme non gere"
              call arret_code
           end select
 
 !!! vitesse du son
-!--------------- DO PROJET ----------------!
-            !$OMP PARALLEL DO
+
           do m = mdeb, mfin
              do l = ldeb, lfin
                 call vitesse_du_son_melange_Allaire(b%gamma_eq(l,m), b%pi_eq(l,m), b%p(l,m), rho(l,m), 1.d0, b%c(l,m), ierreur)
              end do
           end do
-          !$OMP END PARALLEL DO
+
 
 !!! Temperature
           if (b%visqueux) then
-!--------------- DO PROJET ----------------!
-            !$OMP PARALLEL DO
+
              do m = mdeb, mfin
                 do l = ldeb, lfin
                    b%T(l,m) = EOS_T_from_p_rho(fluide1%EOS, b%p(l,m), rho(l,m))
                 end do
              end do
-             !$OMP END PARALLEL DO
+
           end if
        case (CHIMIE_FIGEE)
           call decode_chimie(ldeb, lfin, mdeb, mfin, b, ierreur)
@@ -368,14 +355,12 @@ contains
 !!! enthalpie totale : E + p/rho
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!--------------- DO PROJET ----------------!
-    !$OMP PARALLEL DO
     do m = mdeb, mfin
        do l = ldeb, lfin
           b%Htot(l,m) = U(irhoE,l,m)/rho(l,m) + b%p(l,m)/rho(l,m)
        end do
     end do
-    !$OMP END PARALLEL DO
+
 
   call fin_watchtime(wT_decodage_U)
 
