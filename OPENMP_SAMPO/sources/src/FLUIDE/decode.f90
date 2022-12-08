@@ -343,7 +343,7 @@ contains
        if (b%visqueux) call calcul_coeff_transport_b(ldeb, lfin, mdeb, mfin, fluide1, b)
 
     case (ALLAIRE) ! diphasique
-       call decode_diphasique(ldeb, lfin, mdeb, mfin, b, ierreur)
+       call decode_diphasique(ldeb, lfin, mdeb, mfin, b, ierreur) 
        ! calcul de la viscosite, de la conductivite et de la diffusion
        if (b%visqueux) call calcul_coeff_transport_diphasique(ldeb, lfin, mdeb, mfin, fluide1, fluide2, b)
     case default
