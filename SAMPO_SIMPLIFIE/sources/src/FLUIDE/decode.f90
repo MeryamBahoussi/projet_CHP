@@ -214,8 +214,6 @@ contains
 !!! rho, ci, u_x, u_y, E
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!--------------- DO PROJET ----------------!
-
     do m = mdeb, mfin
        do l = ldeb, lfin
 
@@ -235,15 +233,7 @@ contains
     print *,  " m = [", mdeb, "," , mfin  , "]"
     print *,  " l = [", ldeb, "," , lfin  , "]"
 
-    !!Verification de la parallélisation
-    ! print *, "somme b%u_x", sum(b%u_x)
-    ! print *, "somme b%u_y", sum(b%u_y)
-    ! print *, "somme b%E", sum(b%E)
-
-    ! Open(15, File=' non_parallele_parametres.dat')
-    !
-    ! write(15,*) b%u_x
-    ! close(15)
+    
 
     select case (MODELE_DIPHASIQUE)
     case (MONOPHASIQUE)
@@ -260,21 +250,13 @@ contains
           b%cv1(ldeb:lfin,mdeb:mfin) = fluide1%EOS%cv
           b%gamma1(ldeb:lfin,mdeb:mfin) = fluide1%EOS%gamma
 
-          !--------------- DO PROJET ----------------!
+        
 
           do m = mdeb, mfin
              do l = ldeb, lfin
                 call stocke_grandeurs_melange(fluide1, b, l, m)
              end do
           end do
-
-          ! Open(15, File='non_parallele_parametres.dat')
-          !
-          ! write(15,*) b%gamma_eq
-          ! write(15,*) b%pi_eq
-          ! write(15,*) b%q_eq
-          ! write(15,*) b%Cv
-          ! close(15)
 
 !!! decodage de la pression
           select case (b%eq_energie)
