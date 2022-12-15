@@ -1,0 +1,87 @@
+ 
+ DATE DE DEBUT D'EXECUTION
+jeu. déc. 15 09:21:16 CET 2022
+ 
+Calcul sur    1 processeur(s) avec  2 thread(s) OpenMP
+ 
+ | Reading from file "entrees/input.ini":
+ |                       iter_deb |                                 0 | *CUSTOM | 
+ |                       iter_max |                                 1 | *CUSTOM | 
+ |                      temps_Max |                       0.40000E+00 | *CUSTOM | 
+ |          sortie_instationnaire |                                 F | *CUSTOM | 
+ |                      sortie_1D |                                 F | *CUSTOM | 
+ |                      sortie_MF |                                 F | *CUSTOM | 
+ |                 prot_frequence |                              1000 | *CUSTOM | 
+ |                debug_frequence |                               100 | *CUSTOM | 
+ |               sortie_type_freq |                              iter | *CUSTOM | 
+ |               sortie_frequence |                              1000 | *CUSTOM | 
+ |                  nb_super_bloc |                                 1 | *CUSTOM | 
+ |                        nb_bloc |                                 1 | *CUSTOM | 
+ |                    sb_1_nature |                                 0 | *CUSTOM | 
+ |         sb_1_modele_diphasique |                                 0 | *CUSTOM | 
+ |                  sb_1_visqueux |                                 F | *CUSTOM | 
+ |                sb_1_eq_energie |                                 0 | DEFAULT | 
+ |                   sb_1_gravite |                                 F | DEFAULT | 
+ |              sb_1_stationnaire |                                 F | *CUSTOM | 
+ |                sb_1_montee_cfl |                                 F | *CUSTOM | 
+ |                       sb_1_cfl |                       0.20000E+00 | *CUSTOM | 
+ |                 sb_1_nb_membre |                                 1 | DEFAULT | 
+ |                    sb_1_membre |      Integer array of size (   1) | *CUSTOM |     1
+ |           sb_1_solveur_Riemann |                                20 | *CUSTOM | 
+ | sb_1_solveur_Riemann_eq_pentes |                                 F | *CUSTOM | 
+ | sb_1_solveur_Riemann_coeff_pen |                       0.10100E+01 | *CUSTOM | 
+ |            sb_1_correction_son |                                 0 | DEFAULT | 
+ |             sb_1_delta_epsilon |                       0.25000E+00 | *CUSTOM | 
+ |  sb_1_delta_epsilon_couche_lim |                       0.90000E+00 | *CUSTOM | 
+ |                 sb_1_implicite |                                 F | *CUSTOM | 
+ |                     sb_1_ordre |                                 1 | *CUSTOM | 
+ |              sb_1_schema_temps |                                 1 | DEFAULT | 
+ |                     b_1_numero |                                 1 | *CUSTOM | 
+ |                  b_1_type_init |                            sod_2d | *CUSTOM | 
+ |              b_1_maillage_type |                         cartesien | *CUSTOM | 
+ |         b_1_maillage_resserrer |                                 F | DEFAULT | 
+ |                   b_1_xin_xout |         Real array of size (   2) | *CUSTOM | 
+    0.000000    1.000000
+ |                   b_1_yin_yout |         Real array of size (   2) | *CUSTOM | 
+    0.000000    1.000000
+ |                         b_1_ld |                                 1 | DEFAULT | 
+ |                         b_1_lf |                               200 | *CUSTOM | 
+ |                         b_1_md |                                 1 | DEFAULT | 
+ |                         b_1_mf |                               200 | *CUSTOM | 
+ |                   b_1_nb_patch |      Integer array of size (   4) | *CUSTOM |     1    1    1    1
+ |                    b_1_CL_West |                          flux_nul | *CUSTOM | 
+ |                    b_1_CL_East |                          flux_nul | *CUSTOM | 
+ |                   b_1_CL_South |                          flux_nul | *CUSTOM | 
+ |                   b_1_CL_North |                          flux_nul | *CUSTOM | 
+
+ dt euler =  0.33318E-03    dt visqueux =  0.10000E+71
+ ITER=       1    Temps=  0.33318E-03    DT=  0.33318E-03
+ ITER=       1    Temps=  0.33318E-03    DT=  0.33318E-03
+ Ecriture des fichiers ./visit/output_xxxx_fin.vtk
+ Ecriture du fichier ./visit/output_0001_fin.vtk
+ Ecriture des fichiers ./visit/output_xxxx_fin.vtk
+ Ecriture du fichier ./visit/output_0001_fin.vtk
+ 
+ DATE DE FIN D'EXECUTION
+jeu. déc. 15 09:21:19 CET 2022
+ 
+ ---------------------------------------------------------------
+ - Analyse du temps de calcul des différentes portions du code -
+ ---------------------------------------------------------------
+ + boucle en temps      (total)       0.0645012690 s
+ + calcul fluide        (total)       0.0404827770 s     62.7627605299%
+     - save Un            (total)       0.0006695240 s      1.6538489934%
+     - assemblage sm      (total)       0.0349037090 s     86.2186628139%
+     - maj fluide         (total)       0.0005855140 s      1.4463286444%
+     - decodage fluide    (total)       0.0043217050 s     10.6754163620%
+ + delta t              (total)       0.0240059460 s     37.2177886912%
+     - dt decode          (total)       0.0042077710 s     17.5280365941%
+     - dt CL              (total)       0.0002524630 s      1.0516686155%
+     - dt pente           (total)       0.0176905400 s     73.6923260631%
+     - dt Euler           (total)       0.0018229010 s      7.5935395349%
+ + decodage             (total)       0.0173303370 s     26.8682109177%
+     - encode U            (total)       0.0026535980 s      4.1140244255%
+     - decode U          (total)       0.0228797630 s     35.4718028839%
+ + sorties              (total)       1.1625024770 s   1802.2939626402%
+ + communication MPI    (total)       0.0000048760 s      0.0075595416%
+ + communication MPI    (proc 0)      0.0000048760 s

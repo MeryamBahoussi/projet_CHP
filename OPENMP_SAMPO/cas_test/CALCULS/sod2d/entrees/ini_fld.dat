@@ -1,0 +1,35 @@
+parfait_air	! fluide 1
+parfait_air	! fluide 2
+4     		! nombre de zones pour l'initialisation
+################
+#    ZONE 1    #
+################
+1.d0		! z
+0.138d0		! densite
+1.206d0		! vitesse u
+1.206d0    	! vitesse v
+0.029d0    	! pression
+################
+#    ZONE 2    #
+################
+1.d0		! z
+0.5323d0	! densite
+0.d0		! vitesse u
+1.206d0    	! vitesse v
+0.3d0    	! pression
+################
+#    ZONE 3    #
+################
+1.d0		! z
+0.5323d0	! densite
+1.206d0		! vitesse u
+0.d0    	! vitesse v
+0.3d0    	! pression
+################
+#    ZONE 4    #
+################
+1.d0		! z
+1.5d0		! densite
+0.d0		! vitesse u
+0.d0    	! vitesse v
+1.5d0    	! pression
