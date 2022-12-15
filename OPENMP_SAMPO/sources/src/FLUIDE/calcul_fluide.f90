@@ -8,7 +8,7 @@ module m_calcul_fluide
 contains
 
   subroutine calcul_fluide(sb, iter)
-    type (STR_SUPER_BLOC), pointer :: sb
+    type (STR_SUPER_BLOC), pointer :: sb 
     integer           , intent(in) :: iter
 
     call debut_watchTime(wT_fluide_calcul)
